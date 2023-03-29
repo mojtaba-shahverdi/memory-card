@@ -1,0 +1,410 @@
+:root {
+  --color-gray: #f0f0f3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: var(--color-gray);
+}
+
+.card-box-shadow {
+  -webkit-filter: drop-shadow(0 1px 10px #838181);
+          filter: drop-shadow(0 1px 10px #838181);
+  margin-left: 150px;
+  margin-top: 100px;
+}
+
+.card-box-shadow .card-box {
+  -webkit-clip-path: polygon(0 0, calc(100% - 3.625rem) 0, 100% 30%, 100% 70%, calc(100% - 3.625rem) 100%, 0 100%);
+          clip-path: polygon(0 0, calc(100% - 3.625rem) 0, 100% 30%, 100% 70%, calc(100% - 3.625rem) 100%, 0 100%);
+  margin: 1rem;
+  padding-right: 3.625rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background: #f0f0f3;
+  width: 400px;
+  min-height: 17.3125rem;
+  width: 32.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem 0.125rem 1.125rem 1.75rem;
+}
+
+.card-box-shadow .card-box .card-slide {
+  padding-right: 100px;
+}
+
+.card-box-shadow .card-box .card-slide textarea {
+  background: var(--color-gray);
+  border: none;
+  resize: none;
+}
+
+.card-box-shadow .card-box .card-slide .card-question {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card-box-shadow .card-box .card-slide .card-answer {
+  font-size: 20px;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+.card-box-shadow .card-box .card-slide .card-answer::-webkit-scrollbar {
+  display: none;
+}
+
+.card-box-shadow .card-box .card-question {
+  margin-bottom: 1.5rem;
+}
+
+.card-box-shadow .card-box .card-buttons {
+  padding-top: 1.75rem;
+  position: relative;
+}
+
+.card-box-shadow .card-box .card-buttons .card-btn-edit {
+  float: left;
+  border: 3px solid var(--color-gray);
+  border-radius: 50%;
+  padding: 15px;
+  background: var(--color-gray);
+  -webkit-box-shadow: -4px -4px 7px 0 #fff, 5px 5px 7px 0 rgba(175, 175, 192, 0.4);
+          box-shadow: -4px -4px 7px 0 #fff, 5px 5px 7px 0 rgba(175, 175, 192, 0.4);
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.card-box-shadow .card-box .card-buttons .card-btn-edit .checksvg {
+  display: none;
+}
+
+.card-box-shadow .card-box .card-buttons .card-btn-edit:hover {
+  background: #e2e2e271;
+  -webkit-box-shadow: -3px -2px 4px 0 #cfcfcf;
+          box-shadow: -3px -2px 4px 0 #cfcfcf;
+}
+
+.card-box-shadow .card-box .card-buttons .card-btn-edit:hover .editsvg {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  fill: rgba(44, 165, 165, 0.747);
+}
+
+.card-box-shadow .card-box .card-buttons .card-btn-edit:active {
+  background: var(--color-gray);
+  -webkit-box-shadow: inset -2px -2px 7px 0 #fff, 3px 3px 7px 0 rgba(175, 175, 192, 0.4);
+          box-shadow: inset -2px -2px 7px 0 #fff, 3px 3px 7px 0 rgba(175, 175, 192, 0.4);
+}
+
+.card-box-shadow .card-box .card-buttons .card-btn-view {
+  display: inline-block;
+  border: 3px solid var(--color-gray);
+  margin-left: 21%;
+  border-radius: 50%;
+  background: var(--color-gray);
+  -webkit-box-shadow: -4px -4px 7px 0 #fff, 5px 5px 7px 0 rgba(175, 175, 192, 0.4);
+          box-shadow: -4px -4px 7px 0 #fff, 5px 5px 7px 0 rgba(175, 175, 192, 0.4);
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.card-box-shadow .card-box .card-buttons .card-btn-view .showsvg {
+  display: block;
+  padding: 15px;
+}
+
+.card-box-shadow .card-box .card-buttons .card-btn-view:hover {
+  background: #e2e2e271;
+  -webkit-box-shadow: -3px -2px 4px 0 #cfcfcf;
+          box-shadow: -3px -2px 4px 0 #cfcfcf;
+}
+
+.card-box-shadow .card-box .card-buttons .card-btn-view:hover .showsvg {
+  display: block;
+  fill: rgba(38, 141, 38, 0.637);
+}
+
+.card-box-shadow .card-box .card-buttons .card-btn-view:active {
+  background: var(--color-gray);
+  -webkit-box-shadow: inset -2px -2px 7px 0 #fff, 3px 3px 7px 0 rgba(175, 175, 192, 0.4);
+          box-shadow: inset -2px -2px 7px 0 #fff, 3px 3px 7px 0 rgba(175, 175, 192, 0.4);
+}
+
+.card-box-shadow .card-box .card-buttons .card-btn-view-hide {
+  position: absolute;
+  right: 44.05%;
+  display: inline-block;
+  border: 3px solid var(--color-gray);
+  margin-left: 21%;
+  border-radius: 50%;
+  background: var(--color-gray);
+  -webkit-box-shadow: -4px -4px 7px 0 #fff, 5px 5px 7px 0 rgba(175, 175, 192, 0.4);
+          box-shadow: -4px -4px 7px 0 #fff, 5px 5px 7px 0 rgba(175, 175, 192, 0.4);
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: none;
+}
+
+.card-box-shadow .card-box .card-buttons .card-btn-view-hide .showsvg {
+  display: block;
+  padding: 15px;
+  fill: green;
+}
+
+.card-box-shadow .card-box .card-buttons .card-btn-view-hide:hover {
+  background: #e2e2e271;
+  -webkit-box-shadow: -3px -2px 4px 0 #cfcfcf;
+          box-shadow: -3px -2px 4px 0 #cfcfcf;
+}
+
+.card-box-shadow .card-box .card-buttons .card-btn-view-hide:hover .showsvg {
+  display: block;
+  fill: black;
+}
+
+.card-box-shadow .card-box .card-buttons .card-btn-view-hide:active {
+  background: var(--color-gray);
+  -webkit-box-shadow: inset -2px -2px 7px 0 #fff, 3px 3px 7px 0 rgba(175, 175, 192, 0.4);
+          box-shadow: inset -2px -2px 7px 0 #fff, 3px 3px 7px 0 rgba(175, 175, 192, 0.4);
+}
+
+.card-box-shadow .card-box .card-buttons .card-btn-delete {
+  float: right;
+  border: 3px solid var(--color-gray);
+  border-radius: 50%;
+  padding: 15px;
+  background: var(--color-gray);
+  -webkit-box-shadow: -4px -4px 7px 0 #fff, 5px 5px 7px 0 rgba(175, 175, 192, 0.4);
+          box-shadow: -4px -4px 7px 0 #fff, 5px 5px 7px 0 rgba(175, 175, 192, 0.4);
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.card-box-shadow .card-box .card-buttons .card-btn-delete:hover .svg-del {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  fill: rgba(212, 8, 8, 0.555);
+}
+
+.card-box-shadow .card-box .card-buttons .card-btn-delete:hover {
+  background: #e2e2e271;
+  -webkit-box-shadow: -3px -2px 4px 0 #cfcfcf;
+          box-shadow: -3px -2px 4px 0 #cfcfcf;
+}
+
+.card-box-shadow .card-box .card-buttons .card-btn-delete:active {
+  background: var(--color-gray);
+  -webkit-box-shadow: inset -2px -2px 7px 0 #fff, 3px 3px 7px 0 rgba(175, 175, 192, 0.4);
+          box-shadow: inset -2px -2px 7px 0 #fff, 3px 3px 7px 0 rgba(175, 175, 192, 0.4);
+}
+
+.card-box-shadow .card-box .card-buttons .card-btn-check {
+  display: none;
+  -webkit-animation: show 1s forwards;
+          animation: show 1s forwards;
+  position: absolute;
+  right: -50px;
+  top: -40%;
+  border: 3px solid var(--color-gray);
+  border-radius: 50%;
+  padding: 15px;
+  background: var(--color-gray);
+  -webkit-box-shadow: -4px -4px 7px 0 #fff, 5px 5px 7px 0 rgba(175, 175, 192, 0.4);
+          box-shadow: -4px -4px 7px 0 #fff, 5px 5px 7px 0 rgba(175, 175, 192, 0.4);
+  cursor: pointer;
+  fill: #08bcd4;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.card-box-shadow .card-box .card-buttons .card-btn-check:hover {
+  fill: green;
+}
+
+.card-box-shadow .card-box .card-buttons .card-btn-check:hover {
+  background: #e2e2e271;
+  -webkit-box-shadow: -3px -2px 4px 0 #cfcfcf;
+          box-shadow: -3px -2px 4px 0 #cfcfcf;
+}
+
+.card-box-shadow .card-box .card-buttons .card-btn-check:active {
+  background: var(--color-gray);
+  -webkit-box-shadow: inset -2px -2px 7px 0 #fff, 3px 3px 7px 0 rgba(175, 175, 192, 0.4);
+          box-shadow: inset -2px -2px 7px 0 #fff, 3px 3px 7px 0 rgba(175, 175, 192, 0.4);
+}
+
+.add-cards-section-shadow {
+  display: none;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  text-align: center;
+  -webkit-filter: drop-shadow(0 1px 10px #838181);
+          filter: drop-shadow(0 1px 10px #838181);
+  -webkit-transition: opacity 1s linear;
+  transition: opacity 1s linear;
+}
+
+.add-cards-section-shadow .add-cards-section {
+  visibility: inherit;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  -webkit-clip-path: polygon(20% 0, 80% 0, 100% 30%, 100% 70%, 80% 100%, 20% 100%, 0% 70%, 0% 30%);
+          clip-path: polygon(20% 0, 80% 0, 100% 30%, 100% 70%, 80% 100%, 20% 100%, 0% 70%, 0% 30%);
+  padding-left: 3.625rem;
+  display: inline-block;
+  background: #f0f0f3;
+  padding: 1.5rem 1.125rem 1.125rem 1.75rem;
+  min-height: 17.3125rem;
+  width: 50.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  -webkit-animation: show 1s forwards;
+          animation: show 1s forwards;
+}
+
+@-webkit-keyframes show {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes show {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.add-cards-section-shadow .add-cards-section .btn-add-card {
+  border: 3px solid var(--color-gray);
+  border-radius: 50%;
+  padding: 15px;
+  background: var(--color-gray);
+  -webkit-box-shadow: -4px -4px 7px 0 #fff, 5px 5px 7px 0 rgba(175, 175, 192, 0.4);
+          box-shadow: -4px -4px 7px 0 #fff, 5px 5px 7px 0 rgba(175, 175, 192, 0.4);
+  cursor: pointer;
+  fill: #08bcd4;
+  position: absolute;
+  float: right;
+  right: 20px;
+  top: 30%;
+}
+
+.add-cards-section-shadow .add-cards-section .btn-add-card:hover {
+  background: var(--color-gray);
+  -webkit-box-shadow: inset -2px -2px 7px 0 #fff, 3px 3px 7px 0 rgba(175, 175, 192, 0.4);
+          box-shadow: inset -2px -2px 7px 0 #fff, 3px 3px 7px 0 rgba(175, 175, 192, 0.4);
+}
+
+.add-cards-section-shadow .add-cards-section .btn-add-card:hover .svg-add {
+  -webkit-transition: 1s;
+  transition: 1s;
+  fill: #0dcf75;
+}
+
+.add-cards-section-shadow .add-cards-section .btn-add-card:active {
+  background: #e2e2e271;
+  -webkit-box-shadow: -3px -2px 4px 0 #cfcfcf;
+          box-shadow: -3px -2px 4px 0 #cfcfcf;
+}
+
+.add-cards-section-shadow .add-cards-section .card-inputs #question {
+  text-align: center;
+  resize: none;
+  padding: 14px 0px;
+  margin: 50px 0 10px 0;
+  border: 1px solid white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px 10px #dfdfdf;
+          box-shadow: 0 0 10px 10px #dfdfdf;
+}
+
+.add-cards-section-shadow .add-cards-section .card-inputs #question:hover {
+  background-color: var(--color-gray);
+}
+
+.add-cards-section-shadow .add-cards-section .card-inputs #question:focus {
+  background-color: var(--color-gray);
+  outline: none !important;
+  border-color: #dfdfdfaf;
+  -webkit-box-shadow: 0 0 10px #a9abad;
+          box-shadow: 0 0 10px #a9abad;
+}
+
+.add-cards-section-shadow .add-cards-section .card-inputs #answer {
+  text-align: center;
+  resize: none;
+  padding: 14px 0px;
+  border: 1px solid white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 20px 10px #dfdfdfaf;
+          box-shadow: 0 0 20px 10px #dfdfdfaf;
+}
+
+.add-cards-section-shadow .add-cards-section .card-inputs #answer:hover {
+  background-color: var(--color-gray);
+}
+
+.add-cards-section-shadow .add-cards-section .card-inputs #answer:focus {
+  background-color: var(--color-gray);
+  outline: none !important;
+  border-color: #dfdfdfaf;
+  -webkit-box-shadow: 0 0 10px #a9abad;
+          box-shadow: 0 0 10px #a9abad;
+}
+
+.btn-add-card-main {
+  border: 3px solid var(--color-gray);
+  border-radius: 50%;
+  padding: 15px;
+  background: var(--color-gray);
+  -webkit-box-shadow: -4px -4px 7px 0 #fff, 5px 5px 7px 0 rgba(105, 105, 105, 0.726);
+          box-shadow: -4px -4px 7px 0 #fff, 5px 5px 7px 0 rgba(105, 105, 105, 0.726);
+  cursor: pointer;
+  position: fixed;
+  right: 80px;
+  bottom: 80px;
+}
+
+.btn-add-card-main:hover {
+  background: var(--color-gray);
+}
+
+.btn-add-card-main:hover .svg-add-main {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  fill: #08bcd4;
+}
+
+.btn-add-card-main:active {
+  background: #e2e2e271;
+  -webkit-box-shadow: -3px -2px 4px 0 #cfcfcf, inset -2px -2px 7px 0 #fff, 3px 3px 7px 0 rgba(175, 175, 192, 0.4);
+          box-shadow: -3px -2px 4px 0 #cfcfcf, inset -2px -2px 7px 0 #fff, 3px 3px 7px 0 rgba(175, 175, 192, 0.4);
+}
+/*# sourceMappingURL=memocard.css.map */
