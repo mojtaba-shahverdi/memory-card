@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -26,7 +26,7 @@ button {
 button:hover {
   background-color: rgba(73, 73, 73, 0.719);
   -webkit-box-shadow: inset -1px -1px 5px 0 rgba(255, 255, 255, 0.514);
-          box-shadow: inset -1px -1px 5px 0 rgba(255, 255, 255, 0.514);
+  box-shadow: inset -1px -1px 5px 0 rgba(255, 255, 255, 0.514);
 }
 
 #header {
@@ -36,22 +36,22 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   min-height: 70px;
   padding: 0 20px;
   -webkit-box-shadow: -1px -1px 5px 0 #383333;
-          box-shadow: -1px -1px 5px 0 #383333;
+  box-shadow: -1px -1px 5px 0 #383333;
 }
 
 #header button {
   font-family: inherit;
   border: 1px solid transparent;
   -webkit-box-shadow: -1px -1px 5px 0 #383333;
-          box-shadow: -1px -1px 5px 0 #383333;
+  box-shadow: -1px -1px 5px 0 #383333;
 }
 
 #create_card {
@@ -61,7 +61,7 @@ button:hover {
   padding: 20px;
   margin-top: 10px;
   -webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.9);
-          box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.9);
 }
 
 #create_card h2 {
@@ -87,13 +87,13 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 100%;
   margin: auto;
   margin-top: 10px;
@@ -107,7 +107,7 @@ button:hover {
   margin: 10px;
   cursor: pointer;
   -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.9);
-          box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.9);
 }
 
 .flashcard h2 {
@@ -136,11 +136,11 @@ button:hover {
     gap: 10px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   #create_card {
     width: 95%;

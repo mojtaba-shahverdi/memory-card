@@ -67,3 +67,4 @@ addFlashcard = () => {
   question.value = "";
   answer.value = "";
 };
+let working;
